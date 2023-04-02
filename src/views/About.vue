@@ -1,48 +1,156 @@
 <template>
   <div style="margin-bottom: 80px;">
-    <h1>Hello!</h1>
+    <div class="photo">
+      <img src="img/avatar.png" alt="Avatar of blazeDev" />
+    </div>
+
+    <h1>blazeDev</h1>
+
+    <div class="social-media-container">
+      <div class="social-media-icons">
+        <a href="https://twitter.com/blazeDev_vlog" target="_blank" title="@blazeDev_vlog">
+          <i class="fa fa-twitter fa-lg fa-fw" style="vertical-align: -5%;"></i>
+        </a>
+        <a href="https://youtube.com/@blazeDev_vlog" target="_blank" title="@blazeDev_vlog">
+          <i class="fa fa-youtube fa-lg fa-fw"></i>
+        </a>
+        <a href="https://instagram.com/blazedev.vlog" target="_blank" title="@blazedev.vlog">
+          <i class="fa fa-instagram fa-lg fa-fw"></i>
+        </a>
+        <!-- <router-link to="/contact" title="E-mail contact form">
+                    <i class="fa fa-envelope-o fa-lg fa-fw"></i>
+                </router-link> -->
+        <a href="https://blazedev-vlog.itch.io" target="_blank" title="blazedev-vlog.itch.io">
+          <i class="fa fa-gamepad fa-lg fa-fw"></i>
+        </a>
+      </div>
+    </div>
 
     <div class="paragraph">
       <div>
-        I'm <strong>John Matrix</strong>, a former Delta Force operative, now a hobbyist lumberjack.<br/>
-        I spend my days living alone with my daughter Jenny, and cutting trees and carrying trunks around to keep in shape.
+        Hi there, <strong>Blaze here</strong>,
+        {{ currentAge }} years old full-time and indie game developer and content creator from Poland 🇵🇱
       </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">stuff</router-link>, on <router-link to="/other-projects">other stuff</router-link>, and took part in <router-link to="/resume">a few things</router-link> as well.</div>
+      <div style="margin-top: 20px;">
+        I started my game development journey when I was 13 (<i>{{ gamedevJourneyAge }} years ago</i>),
+        take a part of first game dev workshop two years later,
+        created some projects which stay sealed and finally decided to <strong>release my own game</strong> 🥳
+      </div>
 
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a monk, like my good friend John Rambo did a few years back. You can reach me at <a href="mailto:johnmatrix@deltaforce.us">johnmatrix@deltaforce.us</a> or <router-link to="/contact">through here</router-link>.</div>
+
+      <div style="margin-top: 20px;">
+        I'm documenting my journey on Twitter and on YouTube, where I want to publish more game dev related content
+        after <strong>finishing my game on 2023Q3</strong>.
+      </div>
     </div>
 
-    <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
-    </div>
+
+
 
     <div style="clear:both"></div>
-
   </div>
 </template>
 
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "About",
+  computed: {
+    currentAge() {
+      return new Date().getFullYear() - 1999;
+    },
+    gamedevJourneyAge() {
+      return new Date().getFullYear() - 2012;
+    }
+  }
+})
+</script>
+
 <style scoped>
+h1 {
+  margin-bottom: 30px;
+}
+
+.social-media-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social-media-icons a {
+  display: block;
+  margin-right: 20px;
+  font-size: 1.4em;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-media-icons a i {
+  font-size: 1.4em;
+}
+
+.social-media-icons a:hover::after {
+  content: attr(title);
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 120%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 .paragraph {
   max-width: 700px;
   margin-bottom: 20px;
 }
 
 .photo {
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-@media only screen and (min-width: 620px){
+.photo>img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 620px) {
   .paragraph {
     float: left;
   }
 
   .photo {
     float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 10px;
-    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .photo>img {
+    width: 224px;
+  }
+
+  .social-media-container {
+    align-items: left;
+    justify-content: left;
   }
 }
-
 </style>

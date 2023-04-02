@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    
+
     <link rel="stylesheet" href="@/assets/projects/projects.css" type="text/css">
 
     <Header />
     <div class="main">
       <transition name="fade" mode="out-in">
-        <router-view/>
+        <router-view />
       </transition>
     </div>
     <Footer />
@@ -36,11 +36,11 @@ Helpers.preloadImages([
 </script>
 
 <style lang="less">
-
 @import './css/projects.less';
 @import './css/variables.less';
 
-html, body {
+html,
+body {
   margin: 0px;
   background-color: @bodyBgColor;
 }
@@ -58,7 +58,11 @@ html, body {
   text-align: justify;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   text-align: left;
 }
 
@@ -67,7 +71,9 @@ a {
   text-decoration: none;
   opacity: 0.5;
 }
-a:hover, .router-link-exact-active {
+
+a:hover,
+.router-link-exact-active {
   opacity: 1;
 }
 
@@ -78,13 +84,14 @@ h1 {
   margin-bottom: 40px;
   margin-left: -2px; // hack to make it "seem" more aligned with smaller text content
   line-height: 1.1em;
+  text-align: center;
 }
 
 .main {
-    padding: 12px;
-  }
+  padding: 12px;
+}
 
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 620px) {
 
   #app {
     text-align: left;
@@ -95,13 +102,16 @@ h1 {
     margin-top: 0.67em;
     margin-bottom: 80px;
     line-height: 0.7em;
+    text-align: left;
   }
 
   .main {
     padding: 0px 40px 40px 180px;
   }
 
-  .main, .header, .footer {
+  .main,
+  .header,
+  .footer {
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -118,5 +128,4 @@ h1 {
 .fade-leave-active {
   opacity: 0
 }
-
 </style>
