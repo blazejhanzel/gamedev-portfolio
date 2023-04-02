@@ -1,5 +1,5 @@
 <template>
-  <div class="http-404">404 🙈</div>
+  <div class="http-404">404 🕵🏻</div>
 </template>
 
 <style scoped>
