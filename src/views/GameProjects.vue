@@ -1,15 +1,17 @@
 <template>
   <div>
-    <h1>Stuff</h1>
+    <h1>Games</h1>
 
     <div style="margin-bottom: 30px;">
-      The following are some stuff I've made or heavily contributed to.
+      <i>I started my game development journey when I was 13 (...) created some projects which stay sealed.</i><br />
+      However, those are projects that I am excited to share with you.
     </div>
 
     <ProjectsList v-bind:projects="projects" />
 
     <div style="margin-top: 20px;">
-      There is more to see on <a target="_blank" href="https://someexternalwebsite.com">some external website</a>
+      There is more to come in the future!
+      <a target="_blank" href="https://twitter.com/blazeDev_vlog">Follow me on Twitter</a> to stay tuned.
     </div>
   </div>
 </template>

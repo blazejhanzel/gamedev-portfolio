@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="skill-name">{{name}}</div>
+    <div class="skill-name">{{ name }}</div>
 
     <div class="skill-rate">
       <template v-for="n in 5">
@@ -25,7 +25,6 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="less">
-
 @import '../css/variables.less';
 
 .clear {
@@ -40,7 +39,7 @@ export default Vue.extend({
 .skill-rate {
   float: left;
   width: 80px;
-  padding-top:11px;
+  padding-top: 11px;
 }
 
 .circle {
@@ -53,13 +52,14 @@ export default Vue.extend({
   opacity: 0.6;
   margin: 0px 2px;
 }
+
 .circle-full {
   background-color: @skillRateCircleColor;
 }
+
 .circle-empty {
   border-width: 1px;
   width: 8px;
   height: 8px;
 }
-
 </style>

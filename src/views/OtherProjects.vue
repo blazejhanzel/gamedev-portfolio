@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Other stuff</h1>
+    <h1>Other projects</h1>
 
     <div style="margin-bottom: 30px;">
-      And here are some other stuff I've made or heavily contributed to, which are totally different than the stuff from earlier.
+      As an indie developer I also take care of art, music and many other things. Those are what I also created.
     </div>
     <ProjectsList v-bind:projects="projects" />
   </div>
@@ -23,6 +23,6 @@ export default Vue.extend({
     return {
       projects: otherProjectsData,
     };
-  },
+  }
 });
 </script>
