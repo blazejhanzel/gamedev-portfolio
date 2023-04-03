@@ -1,4 +1,4 @@
-name: Dependabot
+name: 🤖 Dependabot PR build test
 
 on:
   pull_request:
@@ -6,6 +6,7 @@ on:
 
 jobs:
   build:
+    name: Test build for PR
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -15,18 +16,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '16.14.2'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm run test
-
-    - name: Run Dependabot
-      uses: dependabot/dependabot-core@v0.156.0
-      with:
-        github_token: ${{ secrets.TOKEN_GITHUB }}
-        directory: '/'
+    - run: npm install
+    - run: npm run test
 
     - name: Add build status comment
       if: ${{ success() }}
