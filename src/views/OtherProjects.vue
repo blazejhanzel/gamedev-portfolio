@@ -26,3 +26,14 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style>
+div.paragraph a {
+  text-decoration: none;
+  /* remove underline */
+  border: none;
+  /* remove border */
+  outline: none;
+  /* remove outline */
+}
+</style>
