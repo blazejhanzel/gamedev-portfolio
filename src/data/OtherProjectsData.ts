@@ -86,6 +86,7 @@ export default [
         </a>
       </div>
     </div>
-  `, "#0b5e90", false, true),
-  new ProjectData("space-strike-ost", "Space Strike OST", "", ``, "#1380ce", false, false),
+  `, "#0b5e90", true, true),
+  new ProjectData("line-counter", "Line Counter Unity Tool", "img/projects/line-counter/cover.png", ``, "#808080", false, false),
+  new ProjectData("space-strike-ost", "Space Strike OST", "img/project/space-strike-ost/cover.png", ``, "#1380ce", false, false),
 ];
