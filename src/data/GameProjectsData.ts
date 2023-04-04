@@ -1,7 +1,7 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
-  new ProjectData("space-strike", "Space Strike", "img/projects/space-strike/cover.png", `
+  new ProjectData("space-strike", "Space Strike", "img/projects/space-strike/cover.webp", `
     <div class="paragraph">
       Get ready to take on an intergalactic battle in <i>codename: Space strike</i>!
       With your trusty drone, you'll fight against a horde of invading aliens as they try to take over the solar system.
