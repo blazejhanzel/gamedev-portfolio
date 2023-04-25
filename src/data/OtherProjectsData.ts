@@ -86,6 +86,50 @@ export default [
         </a>
       </div>
     </div>
-  `, "#0b5e90", false, true),
-  new ProjectData("space-strike-ost", "Space Strike OST", "", ``, "#1380ce", false, false),
+  `, "#0b5e90", true, true),
+  new ProjectData("line-counter", "Line Counter Unity Tool", "img/projects/line-counter/cover.png", `
+    <div class="paragraph">
+      Introducing Line Counter, the must-have tool for any Unity developer!<br/>
+      Are you tired of manually counting the lines of code in your project's scripts?
+      With Line Counter, you can quickly and accurately count the lines of code in any script within your Unity project.
+      This helps you keep track of your progress and can even help you optimize your code for better performance because it displays line counting for every file separately also.
+      Don't waste any more time manually counting lines of code – download Line Counter now and streamline your development process!
+    </div>
+
+    <div class="paragraph">
+      <div class="notice">
+        You can download this script from <a href="https://gist.github.com/blazejhanzel/70b61927dab217d18018c7dfff289cc2">my GitHub Gists</a>.
+        Just put this source file somewhere inside your project.<br/>
+        <strong>Keep in mind that if you put it inside "Scripts/" folder it will be counting itself also.</strong>
+      </div>
+    </div>
+
+    <div class="paragraph center">
+      <a href="img/projects/line-counter/cover.png">
+        <img class="phone-screenshot" src="img/projects/line-counter/cover.png" alt="Line counter screenshot" />
+      </a>
+    </div>
+  `, "#808080", false, false),
+  new ProjectData("space-strike-ost", "Space Strike OST", /*"img/project/space-strike-ost/cover.png"*/
+    "https://fakeimg.pl/300x300/", `
+    <div class="paragraph">
+      Immerse yourself in the adrenaline-fueled world of <i>codename: Space Strike</i> with my epic soundtrack album!
+      Featuring three dynamic tracks:
+      <ul>
+        <li><i>Intro</i></li>
+        <li><i>Protect the Earth</i></li>
+        <li><i>The Boss</i></li>
+      </ul>
+      each song is crafted to transport you into the heart of the action as you fight against invading aliens and defend the solar system.
+      This soundtrack is the perfect accompaniment to your gaming experience, and is sure to keep you pumped up and ready to take on any challenge.<br/>
+
+      <div class="notice">
+        You can check this soundtrack on <a href="https://www.youtube.com/playlist?list=PLB37X6IUqpFWmuSrZyG2cHXYVaTSzBo0i">YouTube</a>.
+      </div>
+
+      <strong>Available soon on Bandcamp/other platform! Follow me on Twitter to stay tuned!</strong><br/>
+
+      More tracks coming soon.
+    </div>
+    `, "#1380ce", false, false),
 ];

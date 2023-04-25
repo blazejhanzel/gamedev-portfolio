@@ -1,4 +1,4 @@
-name: 🤖 Dependabot PR build test
+name: 🤖 Try to build website on PR changes
 
 on:
   pull_request:
@@ -6,18 +6,18 @@ on:
 
 jobs:
   build:
-    name: Test build for PR
+    name: 🔍 Try to build
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
 
-    - name: Set up Node.js
+    - name: 🔨 Build using Node.js 16.14.2
       uses: actions/setup-node@v3
       with:
         node-version: '16.14.2'
-    - run: npm install
-    - run: npm run test
+    - run: npm ci
+    - run: npm run build
 
     - name: Add build status comment
       if: ${{ success() }}
