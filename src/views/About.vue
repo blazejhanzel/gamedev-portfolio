@@ -17,8 +17,8 @@
         <a href="https://instagram.com/blaze.h99" target="_blank" title="@blazedev.vlog">
           <i class="fa fa-instagram fa-lg fa-fw"></i>
         </a>
-				<a href="https://www.tiktok.com/@blazedev_vlog" target="_blank" title="@blazedev_vlog">
-          <i class="fa fa-tiktok fa-lg fa-fw"></i>
+        <a href="https://www.tiktok.com/@blazedev_vlog" target="_blank" title="@blazedev_vlog">
+          <i class="fab fa-tiktok fa-lg fa-fw"></i>
         </a>
         <!-- <router-link to="/contact" title="E-mail contact form">
                     <i class="fa fa-envelope-o fa-lg fa-fw"></i>
