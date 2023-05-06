@@ -23,6 +23,10 @@
         <!-- <router-link to="/contact" title="E-mail contact form">
                     <i class="fa fa-envelope-o fa-lg fa-fw"></i>
                 </router-link> -->
+        <a href="https://play.google.com/store/apps/dev?id=6672776623652816699" target="_blank"
+          title="blazeDev on Google Play">
+          <i class="fab fa-google-play fa-lg fa-fw"></i>
+        </a>
         <a href="https://blazedev-vlog.itch.io" target="_blank" title="blazedev-vlog.itch.io">
           <i class="fab fa-itch-io fa-lg fa-fw"></i>
         </a>
@@ -87,6 +91,10 @@ h1 {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 3em;
 }
 
 .social-media-icons a {
