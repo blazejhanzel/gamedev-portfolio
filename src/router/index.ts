@@ -10,11 +10,11 @@ const routes: Array<RouteConfig> = [
     name: 'Root',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-  //   {
-  //     path: '/resume',
-  //     name: 'Resume',
-  //     component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
-  //   },
+  {
+    path: '/privacy-policy',
+    name: 'Privacy Policy',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PrivacyPolicy.vue')
+  },
   {
     path: '/games',
     name: 'Games',
