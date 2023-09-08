@@ -17,9 +17,9 @@
         <a href="https://instagram.com/blaze.h99" target="_blank" title="@blaze.h99">
           <i class="fa fa-instagram fa-lg fa-fw"></i>
         </a>
-        <a href="https://www.tiktok.com/@blazedev_vlog" target="_blank" title="@blazedev_vlog">
+        <!-- <a href="https://www.tiktok.com/@blazedev_vlog" target="_blank" title="@blazedev_vlog">
           <i class="fab fa-tiktok fa-lg fa-fw"></i>
-        </a>
+        </a> -->
         <a href="https://mastodon.social/@blazedev" target="_blank" title="@blazedev@mastodon.social" rel="me">
           <i class="fab fa-mastodon fa-lg fa-fw"></i>
         </a>
