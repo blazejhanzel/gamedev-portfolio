@@ -14,15 +14,15 @@
         <a href="https://youtube.com/@blazeDev_vlog" target="_blank" title="@blazeDev_vlog">
           <i class="fa fa-youtube fa-lg fa-fw"></i>
         </a>
-        <a href="https://instagram.com/blaze.h99" target="_blank" title="@blaze.h99">
+        <!-- <a href="https://instagram.com/blaze.h99" target="_blank" title="@blaze.h99">
           <i class="fa fa-instagram fa-lg fa-fw"></i>
-        </a>
+        </a> -->
         <!-- <a href="https://www.tiktok.com/@blazedev_vlog" target="_blank" title="@blazedev_vlog">
           <i class="fab fa-tiktok fa-lg fa-fw"></i>
         </a> -->
-        <a href="https://mastodon.social/@blazedev" target="_blank" title="@blazedev@mastodon.social" rel="me">
+        <!-- <a href="https://mastodon.social/@blazedev" target="_blank" title="@blazedev@mastodon.social" rel="me">
           <i class="fab fa-mastodon fa-lg fa-fw"></i>
-        </a>
+        </a> -->
         <!-- <router-link to="/contact" title="E-mail contact form">
                     <i class="fa fa-envelope-o fa-lg fa-fw"></i>
                 </router-link> -->
@@ -30,9 +30,9 @@
           title="blazeDev on Google Play">
           <i class="fab fa-google-play fa-lg fa-fw"></i>
         </a>
-        <a href="https://blazedev-vlog.itch.io" target="_blank" title="blazedev-vlog.itch.io">
+        <!-- <a href="https://blazedev-vlog.itch.io" target="_blank" title="blazedev-vlog.itch.io">
           <i class="fab fa-itch-io fa-lg fa-fw"></i>
-        </a>
+        </a> -->
       </div>
     </div>
 
