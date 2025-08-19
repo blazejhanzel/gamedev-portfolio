@@ -21,14 +21,14 @@ jobs:
     - run: npm ci
     - run: NODE_OPTIONS=--openssl-legacy-provider npm run build
 
-    - name: Add build status comment
-      if: ${{ success() }}
-      uses: unsplash/comment-on-pr@v1.3.0
-      with:
-        message: 'The build passed. :white_check_mark:'
+    # - name: Add build status comment
+    #   if: ${{ success() }}
+    #   uses: unsplash/comment-on-pr@v1.3.0
+    #   with:
+    #     msg: 'The build passed. :white_check_mark:'
 
-    - name: Add build failure comment
-      if: ${{ failure() }}
-      uses: unsplash/comment-on-pr@v1.3.0
-      with:
-        message: 'The build failed. :x:'
+    # - name: Add build failure comment
+    #   if: ${{ failure() }}
+    #   uses: unsplash/comment-on-pr@v1.3.0
+    #   with:
+    #     msg: 'The build failed. :x:'
