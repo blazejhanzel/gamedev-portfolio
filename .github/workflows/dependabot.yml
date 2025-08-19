@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: 🔍 Try to build
+    name: Check if build passes
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
@@ -32,11 +32,3 @@ jobs:
       uses: unsplash/comment-on-pr@v1.3.0
       with:
         message: 'The build failed. :x:'
-
-  notifications:
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-    - name: Send notification
-      if: ${{ failure() }}
-      run: echo "The workflow failed."
