@@ -22,7 +22,7 @@ concurrency:
 jobs:
   build:
     environment:
-      name: 🎉 Build and Deploy
+      name: Build and Deploy
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
