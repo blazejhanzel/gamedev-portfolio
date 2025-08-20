@@ -88,6 +88,7 @@ h1 {
 }
 
 .main {
+  background-color: @contentBgColor;
   padding: 12px;
 }
 
@@ -110,7 +111,7 @@ h1 {
   }
 
   .main,
-  .header,
+  .nav-bar,
   .footer {
     max-width: 1200px;
     margin: 0 auto;

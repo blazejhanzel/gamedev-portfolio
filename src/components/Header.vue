@@ -23,6 +23,7 @@ export default Vue.extend({
 @import '../css/variables.less';
 
 .header {
+  background-color: @headerBgColor;
   width: 100%;
 }
 
@@ -33,12 +34,14 @@ export default Vue.extend({
 }
 
 a {
+  color: @headerTextColor;
   text-transform: uppercase;
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 8px;
   white-space: nowrap;
   display: inline-block;
+  font-size: 1.15em;
 }
 
 .router-link-exact-active {

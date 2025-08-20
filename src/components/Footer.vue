@@ -28,8 +28,8 @@ export default Vue.extend({
     },
     computed: {
         currentYear() {
-            const currentYear = new Date().getFullYear();
-            return currentYear > 2023 ? `2023-${currentYear}` : "2023";
+            const buildYear = process.env.VUE_APP_BUILD_YEAR;
+            return buildYear > 2023 ? `2023-${buildYear}` : "2023";
         },
     },
 });
