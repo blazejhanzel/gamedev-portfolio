@@ -39,7 +39,7 @@
     <div class="paragraph">
       <div>
         Hi there, <strong>Blaze here</strong>,
-        {{ currentAge }} years old full-time and indie game developer and content creator from Poland 🇵🇱
+        {{ currentAge }} years old Indie Game Developer from Poland 🇵🇱 Creator of “Astro Strike – Space Shooter” game 👾 and “Blaze Builder – Easy Multiplatform Build” Unity tool 🎮 I create cool game dev-related projects 💻 and YouTube videos 🎬 I like emojis 😄
       </div>
 
       <div style="margin-top: 20px;">
@@ -50,8 +50,7 @@
 
 
       <div style="margin-top: 20px;">
-        I'm documenting my journey on Twitter and on YouTube, where I want to publish more game dev related content
-        after <strong>finishing my game on 2023Q3</strong>.
+        I’m documenting my journey on Twitter/X and on YouTube, where I post everything related with game development – devlogs, tips and tutorials.
       </div>
     </div>
 
